@@ -1,0 +1,232 @@
+body {
+    margin: 0px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* top banner section  */
+
+.top-course-banner {
+    height: 400px;
+    width: 100vw;
+}
+
+/* course description section  */
+
+.course-description-cont {
+    background: #f4f4f4;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 100vw;
+    padding: 30px 0px;
+    padding-bottom: 50px;
+    text-align: left;
+}
+
+.desc-heading {
+    padding-left: 30px;
+}
+
+.desc-para {
+    padding-right: 300px;
+    padding-left: 30px;
+    margin-bottom: 40px;
+    text-align: justify;
+}
+
+.desc-btn {
+    margin-left: 30px;
+    padding: 12px 15px;
+    background: rgb(77, 141, 209);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px black;
+}
+
+.desc-btn:hover {
+    background: rgb(51, 142, 240);
+    cursor: pointer;
+}
+
+.desc-btn:active {
+    box-shadow: none;
+}
+
+/* pathway section  */
+
+.pathway-cont {
+    background: linear-gradient(180deg, #f4f4f4, white);
+    margin-top: 0;
+    padding-bottom: 20px;
+    width: 100vw;
+}
+
+.pathway-heading {
+    text-align: left;
+    font-size: 30px;
+    padding-left: 30px;
+}
+
+.pathway-desc {
+    text-align: left;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    padding-right: 30px;
+}
+
+.cards-cont {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    height: 270px;
+    width: 270px;
+    border: 1px solid gray;
+    padding: 12px 8px;
+    background: #f4f4f4;
+    border-radius: 10px;
+    position: relative;
+}
+
+.card:hover {
+    box-shadow: 2px 2px 15px black;
+}
+
+.card-img {
+    height: 140px;
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.card-details {
+    text-align: left;
+    padding-left: 15px;
+    position: relative;
+    height: calc(100% - 155px);
+}
+
+.card-pathway {
+    font-size: 13px;
+    font-weight: bold;
+    color: rgb(100, 97, 97);
+    margin: 5px 0;
+}
+
+.card-heading {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 20px 15px 0;
+    min-height: 40px;
+}
+
+.card-bottom-actions {
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    right: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-launch-btn {
+    padding: 8px 16px;
+    background: #08427f;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.card-launch-btn:hover {
+    background: #0a5299;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+    transform: translateY(-1px);
+}
+
+.card-share-icon {
+    padding: 8px 12px;
+    background: white;
+    color: #08427f;
+    border-radius: 50%;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 16px;
+}
+
+.card-share-icon:hover {
+    color: white;
+    background: #08427f;
+    transform: translateY(-1px);
+}
+
+.show-all-btn {
+    color: #08427f;
+    background: white;
+    padding: 10px 10px;
+    border: 1.5px solid #08427f;
+    border-radius: 20px;
+    font-weight: bold;
+    box-shadow: 2px 2px 3px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    transition: box-shadow 0.3s ease;
+}
+
+.show-all-btn:hover {
+    color: white;
+    background: #08427f;
+    cursor: pointer;
+    box-shadow: 1px 1px 10px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .desc-para {
+        padding: 0 20px;
+    }
+    
+    .pathway-heading {
+        padding-left: 20px;
+        font-size: 24px;
+    }
+    
+    .pathway-desc {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .cards-cont {
+        grid-template-columns: 1fr;
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        height: 280px;
+        width: 270px;
+    }
+    
+    .card-img {
+        height: 140px;
+        width: 100%;
+        object-fit: cover;
+    }
+}
